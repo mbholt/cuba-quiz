@@ -326,6 +326,9 @@ clearScoresBtn.addEventListener('click', clearScores);
 startBtn.addEventListener('click', function() {
     landingEl.classList.add('invisible');
     quiz.classList.remove('invisible');
+
+    audio.play();
+    
     time = 120;
     score = 0;
     startQuiz();
